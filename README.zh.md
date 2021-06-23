@@ -1,4 +1,4 @@
-中文版 | [English Version](./README_en.md)
+中文版 | [English Version](./README.md)
 
 ### 開始使用
 ---
