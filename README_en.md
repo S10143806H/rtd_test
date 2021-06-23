@@ -1,3 +1,5 @@
+English Version | [中文版](./README.md)
+
 ### GETTING START
 ---
 
