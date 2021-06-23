@@ -1,4 +1,4 @@
-English Version | [中文版](./README.md)
+English Version | [中文版](./README.zh.md)
 
 ### GETTING START
 ---
