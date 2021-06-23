@@ -1,14 +1,14 @@
-中文版 | [English Version](./README_en.md)
+English Version | [中文版](./README.md)
 
-### 开始使用
+### GETTING START
 ---
 
-|集成方法|文档入口|当前状态|
+|Integration Method|Document Entry|Current Status|
 |:----|:-----|:-----|
-|代码演示|[文档](https://rtd-test-zh.readthedocs.io/zh_TW/latest/) | [![Documentation Status](https://readthedocs.org/projects/code-blocks/badge/?version=latest)](https://readthedocs.org/projects/rtd-test-zh/)|
+|Code Demo |[Documents](https://rtd-test-en.readthedocs.io/en/latest/) |[![Documentation Status](https://readthedocs.org/projects/code-blocks-en/badge/?version=latest)](https://readthedocs.org/projects/rtd-test-en/)|
 
 
-### 联系我们
+### CONTACT US
 ---
 
 - Facebook：https://www.facebook.com/groups/AmebaIoT
