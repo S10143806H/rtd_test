@@ -12,4 +12,4 @@ English Version | [中文版](./README.zh.md)
 ---
 
 - Facebook：https://www.facebook.com/groups/AmebaIoT
-- 官方論壇：https://forum.amebaiot.com/ 
+- Forum：   https://forum.amebaiot.com/ 
