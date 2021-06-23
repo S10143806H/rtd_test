@@ -5,7 +5,7 @@ English Version | [中文版](./README.md)
 
 |Integration Method|Document Entry|Current Status|
 |:----|:-----|:-----|
-|Code Demo |[Documents](https://rtd-test-zh.readthedocs.io/en/latest/) |[![Documentation Status](https://readthedocs.org/projects/code-blocks-en/badge/?version=latest)](https://readthedocs.org/projects/rtd-test-en/)|
+|Code Demo |[Documents](https://rtd-test-en.readthedocs.io/en/latest/) |[![Documentation Status](https://readthedocs.org/projects/code-blocks-en/badge/?version=latest)](https://readthedocs.org/projects/rtd-test-en/)|
 
 
 ### CONTACT US
