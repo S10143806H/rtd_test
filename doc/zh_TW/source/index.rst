@@ -2,6 +2,8 @@
    sphinx-quickstart on Tue Jun 22 09:19:55 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+   
+`英文 <https://github.com/S10143806H/rtd_test/blob/main/doc/en/source/index.rst>`_ | `繁中 <https://github.com/S10143806H/rtd_test/blob/main/doc/zh_TW/source/index.rst>`_ 
 
 歡迎來到 Ameba D (RTL8722) 編程指南!
 ==================================
