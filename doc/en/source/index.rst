@@ -2,6 +2,7 @@
    sphinx-quickstart on Fri Dec 18 01:57:15 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+`Traditional Chinese <https://github.com/S10143806H/rtd_test/blob/main/doc/zh_TW/source/index.rst>`_ | `English <https://github.com/S10143806H/rtd_test/blob/main/doc/en/source/index.rst>`_
 
 Welcome to Ameba D (RTL8722) Online SDK Documentation!
 =======================================================
