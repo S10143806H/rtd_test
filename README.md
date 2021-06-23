@@ -2,6 +2,7 @@
 
 
 ### 开始使用
+---
 
 |集成方法|文档入口|当前状态|
 |:----|:-----|:-----|
@@ -9,6 +10,7 @@
 
 
 ### 联系我们
+---
 
 - Facebook：https://www.facebook.com/groups/AmebaIoT
 - 官方論壇：https://forum.amebaiot.com/ 
