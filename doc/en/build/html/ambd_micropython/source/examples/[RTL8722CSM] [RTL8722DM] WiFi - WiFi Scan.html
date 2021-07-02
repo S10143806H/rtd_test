@@ -38,7 +38,7 @@
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Board HDK" href="../board_hdk/index.html" />
+    <link rel="next" title="Peripheral_SDFS_file_manipulation" href="Peripheral_SDFS_file_manipulation.html" />
     <link rel="prev" title="[RTL8722CSM] [RTL8722DM] WiFi - WiFi Connect" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20WiFi%20-%20WiFi%20Connect.html" /> 
 </head>
 
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20UART%20-%20Send%20and%20Receive.html">[RTL8722CSM] [RTL8722DM] UART - Send and Receive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20WiFi%20-%20WiFi%20Connect.html">[RTL8722CSM] [RTL8722DM] WiFi - WiFi Connect</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">[RTL8722CSM] [RTL8722DM] WiFi - WiFi Scan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Peripheral_SDFS_file_manipulation.html">Peripheral_SDFS_file_manipulation</a></li>
 </ul>
 </li>
 </ul>
@@ -194,17 +195,14 @@
 <li><p>Ameba x 1</p></li>
 </ul>
 <p><strong>Steps</strong></p>
-<p>WiFi Scan function can help us quickly discover what WiFi networks are available in our surrounding. This example does not require any additional hardware, thus simply copy, and paste the following code into REPL to see its effect.
-.. code-block:: html</p>
-<blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">linenos</dt>
-<dd class="field-odd"><p></p></dd>
-</dl>
-<p>from wireless import WLAN
+<p>WiFi Scan function can help us quickly discover what WiFi networks are available in our surrounding. This example does not require any additional hardware, thus simply copy, and paste the following code into REPL to see its effect.</p>
+<div class="highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>from wireless import WLAN
 wifi = WLAN(mode = WLAN.STA)
-wifi.scan()</p>
-</div></blockquote>
+wifi.scan()
+</pre></div>
+</td></tr></table></div>
 </div>
 
 
@@ -213,7 +211,7 @@ wifi.scan()</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../board_hdk/index.html" class="btn btn-neutral float-right" title="Board HDK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Peripheral_SDFS_file_manipulation.html" class="btn btn-neutral float-right" title="Peripheral_SDFS_file_manipulation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20WiFi%20-%20WiFi%20Connect.html" class="btn btn-neutral float-left" title="[RTL8722CSM] [RTL8722DM] WiFi - WiFi Connect" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

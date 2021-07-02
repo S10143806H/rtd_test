@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Components used" href="Components%20used.html" />
+    <link rel="prev" title="[RTL8722CSM/RTL8722DM] TensorFlow Lite - Micro Speech" href="MicroSpeech.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM/RTL8722DM] TensorFlow Lite - Person Detection</li>
     
     
@@ -165,7 +194,7 @@
 <p><strong>Example</strong></p>
 <p><strong>Procedure</strong></p>
 <p>Connect the camera and LEDs to the RTL8722 board following the diagram.</p>
-<a class="reference internal image-reference" href="../../../_images/image16.png"><img alt="../../../_images/image16.png" src="../../../_images/image16.png" style="width: 3.53125in; height: 2.10417in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image113.png"><img alt="../../../_images/image113.png" src="../../../_images/image113.png" style="width: 3.53125in; height: 2.10417in;" /></a>
 <p>Download the Ameba customized version of TensorFlow Lite for
 Microcontrollers library at
 <a class="reference external" href="https://github.com/ambiot/ambd_arduino/tree/master/Arduino_zip_libraries">https://github.com/ambiot/ambd_arduino/tree/master/Arduino_zip_libraries</a>.
@@ -190,7 +219,7 @@ file:</p>
 SPI can be bit bashed</p>
 <p>Open the example, “Files” -&gt; “Examples” -&gt; “TensorFlowLite_Ameba” -&gt;
 “person_detection”.</p>
-<a class="reference internal image-reference" href="../../../_images/image26.png"><img alt="../../../_images/image26.png" src="../../../_images/image26.png" style="width: 1.85417in; height: 2.77083in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image27.png"><img alt="../../../_images/image27.png" src="../../../_images/image27.png" style="width: 1.85417in; height: 2.77083in;" /></a>
 <p>Upload the code and press the reset button on Ameba once the upload is
 finished.</p>
 <p>Once it is running, you should see the blue LED flashing once every few
@@ -200,8 +229,8 @@ previous image captured, and the green LED will light up if it
 determines that there is a person.</p>
 <p>The inference results are also output to the Arduino serial monitor,
 which appear as follows:</p>
-<a class="reference internal image-reference" href="../../../_images/image32.png"><img alt="../../../_images/image32.png" src="../../../_images/image32.png" style="width: 3.96875in; height: 2.97656in;" /></a>
-<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Code Reference**S</p>
+<a class="reference internal image-reference" href="../../../_images/image33.png"><img alt="../../../_images/image33.png" src="../../../_images/image33.png" style="width: 3.96875in; height: 2.97656in;" /></a>
+<p><strong>Code Reference</strong></p>
 <p>More information on TensorFlow Lite for Microcontrollers can be found
 at: <a class="reference external" href="https://www.tensorflow.org/lite/microcontrollers">https://www.tensorflow.org/lite/microcontrollers</a></p>
 </div>
@@ -211,6 +240,10 @@ at: <a class="reference external" href="https://www.tensorflow.org/lite/microcon
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Components%20used.html" class="btn btn-neutral float-right" title="Components used" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="MicroSpeech.html" class="btn btn-neutral float-left" title="[RTL8722CSM/RTL8722DM] TensorFlow Lite - Micro Speech" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM] [RTL8722DM] PWM – Using A Servo" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20PWM%20%E2%80%93%20Using%20A%20Servo.html" />
+    <link rel="prev" title="[RTL8722CSM] [RTL8722DM] GPIO - Use GPIO Interrupt To Control LED" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20GPIO%20-%20Use%20GPIO%20Interrupt%20To%20Control%20LED.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM] [RTL8722DM] PWM – Play Music</li>
     
     
@@ -169,7 +198,7 @@ the sound wave. Timbre is determined by the waveform of the sound wave.</p>
 desired tone. As PWM outputs square wave, if we wish to emit tone C4
 (frequency=262Hz), we have to make PWM to output square wave with
 wavelength 1/262 = 3.8ms:</p>
-<a class="reference internal image-reference" href="../../../_images/image135.png"><img alt="1" src="../../../_images/image135.png" style="width: 6.5in; height: 1.6875in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image148.png"><img alt="1" src="../../../_images/image148.png" style="width: 6.5in; height: 1.6875in;" /></a>
 <div class="line-block">
 <div class="line">We use PWM to output sound wave with different frequency, so as to
 play music by the buzzer.</div>
@@ -177,7 +206,7 @@ play music by the buzzer.</div>
 diagrams.</div>
 <div class="line">RTL8722 wiring diagram:</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image234.png"><img alt="2" src="../../../_images/image234.png" style="width: 6.24306in; height: 6.88194in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image236.png"><img alt="2" src="../../../_images/image236.png" style="width: 6.24306in; height: 6.88194in;" /></a>
 <div class="line-block">
 <div class="line">Open the example code in “Examples” -&gt; “AmebaAnalog” -&gt;
 “TonePlayMelody”</div>
@@ -201,6 +230,10 @@ to make. Another array, noteDurations, contains the length of each tone,
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20PWM%20%E2%80%93%20Using%20A%20Servo.html" class="btn btn-neutral float-right" title="[RTL8722CSM] [RTL8722DM] PWM – Using A Servo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20GPIO%20-%20Use%20GPIO%20Interrupt%20To%20Control%20LED.html" class="btn btn-neutral float-left" title="[RTL8722CSM] [RTL8722DM] GPIO - Use GPIO Interrupt To Control LED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

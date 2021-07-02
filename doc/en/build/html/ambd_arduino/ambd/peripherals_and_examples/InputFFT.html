@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM/RTL8722DM] Audio Codec – Output Sine Wave" href="OutputSineWave.html" />
+    <link rel="prev" title="[RTL8722CSM/RTL8722DM] Audio Codec – FFT" href="FFT.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM/RTL8722DM] Audio Codec – Input FFT</li>
     
     
@@ -167,17 +196,17 @@
 Fourier transform of the audio signal recorded by the microphone.</p>
 <p><strong>Procedure</strong></p>
 <p>Connect the microphone to the RTL8722 board following the diagram.</p>
-<a class="reference internal image-reference" href="../../../_images/image14.png"><img alt="../../../_images/image14.png" src="../../../_images/image14.png" style="width: 2.10417in; height: 2.1016in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image111.png"><img alt="../../../_images/image111.png" src="../../../_images/image111.png" style="width: 2.10417in; height: 2.1016in;" /></a>
 <p>Open the example, “Files” -&gt; “Examples” -&gt; “AmebaAudioCodec” -&gt;
 “InputFFT”.</p>
-<a class="reference internal image-reference" href="../../../_images/image24.png"><img alt="../../../_images/image24.png" src="../../../_images/image24.png" style="width: 2.03125in; height: 2.77083in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image25.png"><img alt="../../../_images/image25.png" src="../../../_images/image25.png" style="width: 2.03125in; height: 2.77083in;" /></a>
 <p>Upload the code and press the reset button on Ameba once the upload is
 finished.</p>
 <p>Open the serial monitor and change the baud rate to 2000000. A stream of
 FFT results of audio samples will be displayed. Try playing music or use
 a smartphone app to generate a sine wave into the microphone, and you
 should be able to see the FFT output change.</p>
-<a class="reference internal image-reference" href="../../../_images/image31.png"><img alt="../../../_images/image31.png" src="../../../_images/image31.png" style="width: 4.02083in; height: 1.92708in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image32.png"><img alt="../../../_images/image32.png" src="../../../_images/image32.png" style="width: 4.02083in; height: 1.92708in;" /></a>
 </div>
 
 
@@ -185,6 +214,10 @@ should be able to see the FFT output change.</p>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="OutputSineWave.html" class="btn btn-neutral float-right" title="[RTL8722CSM/RTL8722DM] Audio Codec – Output Sine Wave" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="FFT.html" class="btn btn-neutral float-left" title="[RTL8722CSM/RTL8722DM] Audio Codec – FFT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

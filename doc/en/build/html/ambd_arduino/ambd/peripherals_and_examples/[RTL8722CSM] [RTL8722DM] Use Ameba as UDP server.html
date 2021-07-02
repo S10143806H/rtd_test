@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM] [RTL8722DM] Retrieve Universal Time (UTC) By Ameba" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Retrieve%20Universal%20Time%20%28UTC%29%20By%20Ameba.html" />
+    <link rel="prev" title="[RTL8722CSM] [RTL8722DM] Use Ameba as server to send Ameba status" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Use%20Ameba%20as%20server%20to%20send%20Ameba%20status.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Network%20Examples.html">Network Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM] [RTL8722DM] Use Ameba as UDP server</li>
     
     
@@ -167,17 +196,17 @@ server. When Ameba receives a message from UDP client, it replies
 <div class="line-block">
 <div class="line">Open the WiFi Web Server example. “File” -&gt; “Examples” -&gt; “AmebaWiFi”
 -&gt; “WiFiUdpSendReceiveString”</div>
-<div class="line"><a class="reference internal" href="../../../_images/image156.png"><img alt="7-1" src="../../../_images/image156.png" style="width: 5.6875in; height: 7.67361in;" /></a></div>
+<div class="line"><a class="reference internal" href="../../../_images/image174.png"><img alt="7-1" src="../../../_images/image174.png" style="width: 5.6875in; height: 7.67361in;" /></a></div>
 </div>
 <p>Modify the highlighted code section (ssid, password, keyindex) to
 connect to your WiFi network.</p>
-<a class="reference internal image-reference" href="../../../_images/image254.png"><img alt="7-2" src="../../../_images/image254.png" style="width: 5.20833in; height: 6.25in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image256.png"><img alt="7-2" src="../../../_images/image256.png" style="width: 5.20833in; height: 6.25in;" /></a>
 <p>Compile the code and upload it to Ameba. After pressing the Reset
 button, Ameba connects to WiFi and starts the UDP server with port 2390.
 After the UDP server starts service, Ameba prints the “Starting
 connection to server” message and waits for client connection.</p>
 <div class="line-block">
-<div class="line"><a class="reference internal" href="../../../_images/image334.png"><img alt="7-4" src="../../../_images/image334.png" style="width: 6.5in; height: 4.10833in;" /></a></div>
+<div class="line"><a class="reference internal" href="../../../_images/image337.png"><img alt="7-4" src="../../../_images/image337.png" style="width: 6.5in; height: 4.10833in;" /></a></div>
 <div class="line">As to the UDP client, we use “sokit” program in the computer to
 connect to UDP server.</div>
 </div>
@@ -186,7 +215,7 @@ Ameba) and port 2390, then click “UDP Connect”.</p>
 <p>After the connection is established, fill in “Hello World” in the Buf 0
 field in sokit and click “Send”. Then you can see the Ameba UDP server
 replies “acknowledged”.</p>
-<a class="reference internal image-reference" href="../../../_images/image430.png"><img alt="7-5" src="../../../_images/image430.png" style="width: 6.5in; height: 4.65139in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image433.png"><img alt="7-5" src="../../../_images/image433.png" style="width: 6.5in; height: 4.65139in;" /></a>
 <p>Code Reference</p>
 <div class="line-block">
 <div class="line">Refer to the Arduino tutorial for detailed information about this
@@ -223,6 +252,10 @@ get the IP and port of the client.</div>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Retrieve%20Universal%20Time%20%28UTC%29%20By%20Ameba.html" class="btn btn-neutral float-right" title="[RTL8722CSM] [RTL8722DM] Retrieve Universal Time (UTC) By Ameba" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Use%20Ameba%20as%20server%20to%20send%20Ameba%20status.html" class="btn btn-neutral float-left" title="[RTL8722CSM] [RTL8722DM] Use Ameba as server to send Ameba status" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

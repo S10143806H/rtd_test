@@ -87,12 +87,13 @@
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">AmebaD</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../download/index.html">Download</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../peripherals_and_examples/index.html">Peripherals &amp; Examples</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../board_hdk/index.html">Board HDK</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">API Documents</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Class AmebaServo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Class%20BLEAddr.html">Class BLEAddr</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Class%20BLEAdvert.html">Class BLEAdvert</a></li>
@@ -146,11 +147,10 @@
 <li class="toctree-l4"><a class="reference internal" href="Class%20SdFatFile.html">Class SdFatFile</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../resources/index.html">Resources</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../support/index.html">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
@@ -230,7 +230,8 @@
             
   <div class="section" id="class-amebaservo">
 <h1>Class AmebaServo<a class="headerlink" href="#class-amebaservo" title="Permalink to this headline">¶</a></h1>
-<p><strong>AmebaServo Class</strong></p>
+<div class="section" id="amebaservo-class">
+<h2>AmebaServo Class<a class="headerlink" href="#amebaservo-class" title="Permalink to this headline">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>Defines a class of manipulating servo motors connected to Arduino pins.</p>
 <p><strong>Syntax</strong></p>
@@ -281,17 +282,21 @@ microseconds for this servo.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>AmebaServo::attach</strong></p>
+</div>
+<div class="section" id="amebaservo-attach">
+<h2>AmebaServo::attach<a class="headerlink" href="#amebaservo-attach" title="Permalink to this headline">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>Attach the given pin to the next free channel, sets pinMode (including
 minimum and maximum values for writes), returns channel number, or 0 if
 failure.</p>
 <p><strong>Syntax</strong></p>
-<p>uint8_t attach(int pin);</p>
-<p>uint8_t attach(int pin, int min, int max);</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">uint8_t</span> <span class="nf">attach</span><span class="p">(</span><span class="kt">int</span> <span class="n">pin</span><span class="p">);</span>
+
+<span class="kt">uint8_t</span> <span class="nf">attach</span><span class="p">(</span><span class="kt">int</span> <span class="n">pin</span><span class="p">,</span> <span class="kt">int</span> <span class="n">min</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max</span><span class="p">);</span>
+</pre></div>
+</div>
 <p><strong>Parameters</strong></p>
-<p>pin: ThThe Arduino/Ameba1 PIN to be attachede Arduino pin number to be
-attached.</p>
+<p>pin: The Arduino pin number to be attached.</p>
 <p>min: Minimum values for writes.</p>
 <p>max: Maximum values for writes.</p>
 <p><strong>Returns</strong></p>
@@ -300,55 +305,118 @@ attached.</p>
 <p>Example: ServoSweep</p>
 <p>The code demos servo motor sweeping from 0 degrees to 180 degrees then
 sweep back to 0 degrees in the step of 1 degree.</p>
-<p>/* Sweep</p>
-<p>by BARRAGAN &lt; <a class="reference external" href="http://barraganstudio.com">http://barraganstudio.com</a> &gt;</p>
-<p>This example code is in the public domain.</p>
-<p>modified 8 Nov 2013</p>
-<p>by Scott Fitzgerald</p>
-<p><a class="reference external" href="http://www.arduino.cc/en/Tutorial/Sweep">http://www.arduino.cc/en/Tutorial/Sweep</a></p>
-<p>refined 2016/03/18 by Realtek</p>
-<p>*/</p>
-<p><strong>#include “AmebaServo.h”</strong></p>
-<p>// create servo object to control a servo</p>
-<p>// 4 servo objects can be created correspond to PWM pins</p>
-<p>AmebaServo myservo;</p>
-<p>// variable to store the servo position</p>
-<p><strong>int</strong> pos = 0;</p>
-<p><strong>void</strong> setup() {</p>
-<p><strong>#if defined(BOARD_RTL8195A)</strong></p>
-<p>// attaches the servo on pin 9 to the servo object</p>
-<p>myservo.attach(9);</p>
-<p><strong>#elif defined(BOARD_RTL8710)</strong></p>
-<p>// attaches the servo on pin 13 to the servo object</p>
-<p>myservo.attach(13);</p>
-<p><strong>#elif defined(BOARD_RTL8721D)</strong></p>
-<p>// attaches the servo on pin 8 to the servo object</p>
-<p>myservo.attach(8);</p>
-<p><strong>#else</strong></p>
-<p>// attaches the servo on pin 9 to the servo object</p>
-<p>myservo.attach(9);</p>
-<p><strong>#endif</strong></p>
-<p>}</p>
-<p><strong>void</strong> loop() {</p>
-<p>// goes from 0 degrees to 180 degrees in steps of 1 degree</p>
-<p><strong>for</strong> (pos = 0; pos &lt;= 180; pos += 1) {</p>
-<p>// tell servo to go to position in variable ‘pos’</p>
-<p>myservo.write(pos);</p>
-<p>// waits 15ms for the servo to reach the position</p>
-<p>delay(15);</p>
-<p>}</p>
-<p>// goes from 180 degrees to 0 degrees</p>
-<p><strong>for</strong> (pos = 180; pos &gt;= 0; pos -= 1) {</p>
-<p>// tell servo to go to position in variable ‘pos’</p>
-<p>myservo.write(pos);</p>
-<p>// waits 15ms for the servo to reach the position</p>
-<p>delay(15);</p>
-<p>}</p>
-<p>}</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">ServoSweep.ino</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="cm">/* Sweep</span>
+<span class="cm"> by BARRAGAN &lt; http://barraganstudio.com &gt;</span>
+<span class="cm"> This example code is in the public domain.</span>
+<span class="cm"> modified 8 Nov 2013</span>
+<span class="cm"> by Scott Fitzgerald</span>
+<span class="cm"> http://www.arduino.cc/en/Tutorial/Sweep</span>
+<span class="cm"> refined 2016/03/18 by Realtek</span>
+<span class="cm"> */</span>
+
+ <span class="cp">#include</span> <span class="cpf">&quot;AmebaServo.h&quot;</span><span class="cp"></span>
+
+ <span class="c1">// create servo object to control a servo</span>
+ <span class="c1">// 4 servo objects can be created correspond to PWM pins</span>
+
+ <span class="n">AmebaServo</span> <span class="n">myservo</span><span class="p">;</span>
+
+ <span class="c1">// variable to store the servo position</span>
+ <span class="kt">int</span> <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+ <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+ <span class="cp">#if defined(BOARD_RTL8195A)</span>
+     <span class="c1">// attaches the servo on pin 9 to the servo object</span>
+     <span class="n">myservo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+ <span class="cp">#elif defined(BOARD_RTL8710)</span>
+     <span class="c1">// attaches the servo on pin 13 to the servo object</span>
+     <span class="n">myservo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
+ <span class="cp">#elif defined(BOARD_RTL8721D)</span>
+     <span class="c1">// attaches the servo on pin 8 to the servo object</span>
+     <span class="n">myservo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>
+ <span class="cp">#else</span>
+     <span class="c1">// attaches the servo on pin 9 to the servo object</span>
+     <span class="n">myservo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+ <span class="cp">#endif</span>
+ <span class="p">}</span>
+
+ <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+     <span class="c1">// goes from 0 degrees to 180 degrees in steps of 1 degree</span>
+     <span class="k">for</span> <span class="p">(</span><span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">pos</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">;</span> <span class="n">pos</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+     <span class="c1">// tell servo to go to position in variable &#39;pos&#39;</span>
+     <span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">pos</span><span class="p">);</span>
+     <span class="c1">// waits 15ms for the servo to reach the position</span>
+     <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
+     <span class="p">}</span>
+     <span class="c1">// goes from 180 degrees to 0 degrees</span>
+     <span class="k">for</span> <span class="p">(</span><span class="n">pos</span> <span class="o">=</span> <span class="mi">180</span><span class="p">;</span> <span class="n">pos</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">pos</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+         <span class="c1">// tell servo to go to position in variable &#39;pos&#39;</span>
+         <span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">pos</span><span class="p">);</span>
+         <span class="c1">// waits 15ms for the servo to reach the position</span>
+         <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 <p><strong>Notes and Warnings</strong></p>
 <p>Every time must include the header file “AmebaServo.h” in front of the
 project to use the class function.</p>
-<p><strong>AmebaServo::detach</strong></p>
+</div>
+<div class="section" id="amebaservo-detach">
+<h2>AmebaServo::detach<a class="headerlink" href="#amebaservo-detach" title="Permalink to this headline">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>Detach the servo.</p>
 <p><strong>Syntax</strong></p>
@@ -442,6 +510,7 @@ sweep back to 0 degrees in the step of 1 degree. Please refer to code in
 <p><strong>Notes and Warnings</strong></p>
 <p>Every time must include the header file “AmebaServo.h” in front of the
 project to use the class function.</p>
+</div>
 </div>
 
 

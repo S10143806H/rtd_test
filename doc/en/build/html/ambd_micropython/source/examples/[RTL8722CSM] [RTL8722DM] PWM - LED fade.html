@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20UART%20-%20Send%20and%20Receive.html">[RTL8722CSM] [RTL8722DM] UART - Send and Receive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20WiFi%20-%20WiFi%20Connect.html">[RTL8722CSM] [RTL8722DM] WiFi - WiFi Connect</a></li>
 <li class="toctree-l4"><a class="reference internal" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20WiFi%20-%20WiFi%20Scan.html">[RTL8722CSM] [RTL8722DM] WiFi - WiFi Scan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Peripheral_SDFS_file_manipulation.html">Peripheral_SDFS_file_manipulation</a></li>
 </ul>
 </li>
 </ul>
@@ -197,16 +198,20 @@
 <p>PWM use pulse width modulation to control output duty cycle and is widely used to control LED brightness and motor. Here we are using an LED to demonstrate how PWM works.</p>
 <p>Let us connect pin PA_26 to the anode leg of an LED which in series with a current limiting resistor and GND to cathode of the LED as shown below,</p>
 <p><a class="reference internal" href="../../../_images/imagePWM1.jpg"><img alt="image1" src="../../../_images/imagePWM1.jpg" style="width: 6.16667in; height: 4.34167in;" /></a></p>
-<p>Then, copy and paste the following code line by line into REPL and hit Enter. If everything is in order, you should be able to see the LED slowly become brighter as you paste another line of code.
-.. code-block:: html</p>
-<blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">linenos</dt>
-<dd class="field-odd"><p></p></dd>
-</dl>
-<p>from machine import Pin, PWM
+<p>Then, copy and paste the following code line by line into REPL and hit Enter. If everything is in order, you should be able to see the LED slowly become brighter as you paste another line of code.</p>
+<div class="highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span>from machine import Pin, PWM
 import time
-p = PWM(pin = “PA_26”)
+p = PWM(pin = &quot;PA_26&quot;)
 # 0 duty cycle thus output 0
 p.write(0.0)
 # 10% duty cycle
@@ -214,8 +219,9 @@ p.write(0.1)
 # 50% duty cycle
 p.write(0.5)
 # 100% duty cycle
-p.write(1.0)</p>
-</div></blockquote>
+p.write(1.0)
+</pre></div>
+</td></tr></table></div>
 </div>
 
 

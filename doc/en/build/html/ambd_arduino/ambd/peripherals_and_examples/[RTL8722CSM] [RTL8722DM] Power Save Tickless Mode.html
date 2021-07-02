@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM] [RTL8722DM] Use NTPClient Library To Obtain Local Time" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Use%20NTPClient%20Library%20To%20Obtain%20Local%20Time.html" />
+    <link rel="prev" title="[RTL8722CSM] [RTL8722DM] Power Save Deep Sleep DHT LCD" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Power%20Save%20Deep%20Sleep%20DHT%20LCD.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM] [RTL8722DM] Power Save Tickless Mode</li>
     
     
@@ -170,7 +199,7 @@ use freertos tickless with uart interruptable interface.</p>
 <div class="line"><strong>Procedure</strong></div>
 <div class="line">Open “File” -&gt; “Examples” -&gt; “AmebaPowerSave” -&gt; “TicklessMode”</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image140.png"><img alt="1" src="../../../_images/image140.png" style="width: 5.89583in; height: 7.40972in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image155.png"><img alt="1" src="../../../_images/image155.png" style="width: 5.89583in; height: 7.40972in;" /></a>
 <div class="line-block">
 <div class="line">Set condition values as picture below.</div>
 <div class="line">“TL_WAKEUP_SOURCE” is used to set the wake-up source, user can chose 3
@@ -189,10 +218,10 @@ D16, D17, D26 and D27. The AON pin can be set by
 SET_TL_AON_WAKEPIN_WAKEUP</p>
 <p>TL_SYSACTIVE_TIME is for setting time duration of the system to keep
 alive. (unit ms)</p>
-<a class="reference internal image-reference" href="../../../_images/image238.png"><img alt="1" src="../../../_images/image238.png" style="width: 6.5in; height: 5.64931in;" /></a>
-<a class="reference internal image-reference" href="../../../_images/image322.png"><img alt="1" src="../../../_images/image322.png" style="width: 6.5in; height: 6.5in;" /></a>
-<a class="reference internal image-reference" href="../../../_images/image420.png"><img alt="1" src="../../../_images/image420.png" style="width: 6.5in; height: 6.5in;" /></a>
-<a class="reference internal image-reference" href="../../../_images/image511.png"><img alt="1" src="../../../_images/image511.png" style="width: 6.5in; height: 6.5in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image240.png"><img alt="1" src="../../../_images/image240.png" style="width: 6.5in; height: 5.64931in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image325.png"><img alt="1" src="../../../_images/image325.png" style="width: 6.5in; height: 6.5in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image423.png"><img alt="1" src="../../../_images/image423.png" style="width: 6.5in; height: 6.5in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image514.png"><img alt="1" src="../../../_images/image514.png" style="width: 6.5in; height: 6.5in;" /></a>
 <p>Code Reference</p>
 <p>Please refer to the <a class="reference external" href="https://www.amebaiot.com/rtl8722dm-arduino-online-api-documents/">API
 Documents</a> PowerSave
@@ -204,6 +233,10 @@ section for detail description of all API.</p>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Use%20NTPClient%20Library%20To%20Obtain%20Local%20Time.html" class="btn btn-neutral float-right" title="[RTL8722CSM] [RTL8722DM] Use NTPClient Library To Obtain Local Time" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20Power%20Save%20Deep%20Sleep%20DHT%20LCD.html" class="btn btn-neutral float-left" title="[RTL8722CSM] [RTL8722DM] Power Save Deep Sleep DHT LCD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

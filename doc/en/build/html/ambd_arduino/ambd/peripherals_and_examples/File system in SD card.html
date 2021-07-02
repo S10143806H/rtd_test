@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM/RTL8722DM] TensorFlow Lite - Hello World" href="HelloWorld.html" />
+    <link rel="prev" title="[RTL8722CSM/RTL8722DM] Audio Codec – Output Sine Wave" href="OutputSineWave.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722DM_mini] FatfsSDIO – File system in SD card</li>
     
     
@@ -168,15 +197,15 @@ board.</p>
 <p>Example 01 create_folder</p>
 <p>Open the example, “Files” -&gt; “Examples” -&gt; “AmebaFatfsSDIO” -&gt;
 “create_folder”.</p>
-<a class="reference internal image-reference" href="../../../_images/image12.png"><img alt="../../../_images/image12.png" src="../../../_images/image12.png" style="width: 4in; height: 4.71141in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image19.png"><img alt="../../../_images/image19.png" src="../../../_images/image19.png" style="width: 4in; height: 4.71141in;" /></a>
 <p>Upload the code and press the reset button on Ameba once the upload is
 finished.</p>
 <p>In the sample code, we first create a folder “testdir”, then text file
 “test.txt” with content “hello world!”. Read the file and print content
-to serial monitor.<a class="reference internal" href="../../../_images/image22.png"><img alt="image1" src="../../../_images/image22.png" style="width: 6.26806in; height: 2.72153in;" /></a></p>
+to serial monitor.<a class="reference internal" href="../../../_images/image23.png"><img alt="image1" src="../../../_images/image23.png" style="width: 6.26806in; height: 2.72153in;" /></a></p>
 <p>Next, insert SD card into card reader, and check whether the operations
 succeeded.</p>
-<a class="reference internal image-reference" href="../../../_images/image3.png"><img alt="../../../_images/image3.png" src="../../../_images/image3.png" style="width: 3.96875in; height: 2.49219in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image31.png"><img alt="../../../_images/image31.png" src="../../../_images/image31.png" style="width: 3.96875in; height: 2.49219in;" /></a>
 <p>Example 02 file_read_write</p>
 <p>Open the example, “Files” -&gt; “Examples” -&gt; “AmebaFatfsSDIO” -&gt;
 “file_read_write”.</p>
@@ -184,10 +213,10 @@ succeeded.</p>
 finished.</p>
 <p>In the sample code, we create text file “test.txt” with content “hello
 world!”. Read the file and print content to serial monitor.</p>
-<a class="reference internal image-reference" href="../../../_images/image4.png"><img alt="../../../_images/image4.png" src="../../../_images/image4.png" style="width: 6.26806in; height: 2.72153in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image41.png"><img alt="../../../_images/image41.png" src="../../../_images/image41.png" style="width: 6.26806in; height: 2.72153in;" /></a>
 <p>Next, insert SD card into card reader, and check whether the operations
 succeeded.</p>
-<a class="reference internal image-reference" href="../../../_images/image5.png"><img alt="../../../_images/image5.png" src="../../../_images/image5.png" style="width: 3.625in; height: 2.63636in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image51.png"><img alt="../../../_images/image51.png" src="../../../_images/image51.png" style="width: 3.625in; height: 2.63636in;" /></a>
 <p>Example 03 get_file_attribute</p>
 <p>Open the example, “Files” -&gt; “Examples” -&gt; “AmebaFatfsSDIO” -&gt;
 “get_file_attribute”.</p>
@@ -195,7 +224,7 @@ succeeded.</p>
 finished.</p>
 <p>In the sample code, system will print put all file attribute to serial
 monitor.</p>
-<a class="reference internal image-reference" href="../../../_images/image6.png"><img alt="../../../_images/image6.png" src="../../../_images/image6.png" style="width: 6.26806in; height: 2.72153in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image61.png"><img alt="../../../_images/image61.png" src="../../../_images/image61.png" style="width: 6.26806in; height: 2.72153in;" /></a>
 <p>Next, insert SD card into card reader, and check whether the operations
 succeeded. In this case, we already know the attribute should be folder
 “testdir” and text file “test.txt”by refer the above pictures.</p>
@@ -206,10 +235,10 @@ succeeded. In this case, we already know the attribute should be folder
 finished.</p>
 <p>In the sample code, system will print put the target file last modified
 time to serial monitor.</p>
-<a class="reference internal image-reference" href="../../../_images/image7.png"><img alt="../../../_images/image7.png" src="../../../_images/image7.png" style="width: 6.26806in; height: 2.72153in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image71.png"><img alt="../../../_images/image71.png" src="../../../_images/image71.png" style="width: 6.26806in; height: 2.72153in;" /></a>
 <p>Next, insert SD card into card reader, and check whether the operations
 succeeded.</p>
-<a class="reference internal image-reference" href="../../../_images/image8.png"><img alt="../../../_images/image8.png" src="../../../_images/image8.png" style="width: 4.02556in; height: 3.83333in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image81.png"><img alt="../../../_images/image81.png" src="../../../_images/image81.png" style="width: 4.02556in; height: 3.83333in;" /></a>
 <p>Example 05 list_root_files</p>
 <p>Open the example, “Files” -&gt; “Examples” -&gt; “AmebaFatfsSDIO” -&gt;
 “list_root_files”.</p>
@@ -217,7 +246,7 @@ succeeded.</p>
 finished.</p>
 <p>In the sample code, system will print put all root file to serial
 monitor.</p>
-<a class="reference internal image-reference" href="../../../_images/image9.png"><img alt="../../../_images/image9.png" src="../../../_images/image9.png" style="width: 6.26806in; height: 2.72153in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image91.png"><img alt="../../../_images/image91.png" src="../../../_images/image91.png" style="width: 6.26806in; height: 2.72153in;" /></a>
 <p>Next, insert SD card into card reader, and check whether the operations
 succeeded. In this case, we already know the root files folder “testdir”
 and text file “test.txt”by refer the above pictures.</p>
@@ -228,6 +257,10 @@ and text file “test.txt”by refer the above pictures.</p>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="HelloWorld.html" class="btn btn-neutral float-right" title="[RTL8722CSM/RTL8722DM] TensorFlow Lite - Hello World" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="OutputSineWave.html" class="btn btn-neutral float-left" title="[RTL8722CSM/RTL8722DM] Audio Codec – Output Sine Wave" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

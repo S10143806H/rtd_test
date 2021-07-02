@@ -2,7 +2,6 @@
 Getting Started
 ===============
 
-
 Required Environment
 ====================
 
@@ -12,27 +11,26 @@ AmebaD RTL8722CSM/RTL8722DM MicroPython SDK currently supports Windows
 Introduction to AmebaD RTL8722CSM/RTL8722DM
 ===========================================
 
-| Ameba is an easy-to-program platform for developing all kind of IoT
-  applications. AmebaD is equipped with various peripheral interfaces,
-  including WiFi, BLE, GPIO, I2C, UART, SPI, PWM, ADC and so on. Through
-  these interfaces, AmebaD can connect with electronic components such
-  as LED, switches, manometer, hygrometer, PM2.5 dust sensors, …etc.
-| The collected data can be uploaded via WiFi and be utilized by
-  applications on smart devices to realize IoT implementation.
+Ameba is an easy-to-program platform for developing all kind of IoT
+applications. AmebaD is equipped with various peripheral interfaces,
+including WiFi, BLE, GPIO, I2C, UART, SPI, PWM, ADC and so on. Through
+these interfaces, AmebaD can connect with electronic components such as
+LED, switches, manometer, hygrometer, PM2.5 dust sensors, …etc.
+
+The collected data can be uploaded via WiFi and be utilized by
+applications on smart devices to realize IoT implementation.
 
 |get-start-1|
 
-| AmebaD and Arduino Uno have similar size, as shown in the above
-  figure, and the pins on AmebaD are compatible with Arduino Uno.
+AmebaD and Arduino Uno have similar size, as shown in the above figure,
+and the pins on AmebaD are compatible with Arduino Uno.
+
 | AmebaD uses Micro USB to supply power, which is common in many smart
   devices.
 | Please refer to the following figure and table for the pin diagram and
   function of AmebaD.
 
 |get-start-2|
-
-|  
-|  
 
 === ======== ======== ==== ===== ============= ========= ========
     PIN name GPIO INT ADC  PWM   UART          SPI       I2C
@@ -68,28 +66,18 @@ D27 PA_20    ✓                                            
 D28 PA_19    ✓                                            
 === ======== ======== ==== ===== ============= ========= ========
 
-|  
-|  
-
-| |get-start-3|
-|  
-
+|get-start-3|
+ 
 **Note:** Not all sets of peripherals shown on the picture/table above
 are available on MicroPython, please refer to “\ **Peripheral Example
 and API**\ ” section for more information.
+
 
 Introduction to RTL8722 MicroPython port
 ========================================
 
 Background Information
 ----------------------
-
-MicroPython, by definition, is a lean and efficient Python3 compiler and
-runtime specially designed for microcontrollers.
-
-MicroPython distinguishes itself from other compilation-based platforms
-(Arduino etc.) with its powerful method of real-time interaction to
-Microcontroller through a built-in feature -- REPL.
 
 REPL stands for Read-Evaluation-Print-Loop, it is an interactive prompt
 that you can use to access and control your microcontroller.
@@ -101,10 +89,10 @@ microcontroller.
 
 To use REPL, simply open any serial terminal software (most common ones
 are teraterm, putty etc.) on your PC and connect to your
-microcontroller's serial port, then set baudrate to 115200 before
+microcontroller’s serial port, then set baudrate to 115200 before
 manually reset the board, then you will see >>> MicroPython prompt
 appear on the terminal. Now you may type in any Python script on REPL as
-long as it's support by MicroPython and your microcontroller's
+long as it’s support by MicroPython and your microcontroller’s
 MicroPython port.
 
 Most importantly, try to abuse "help()" function as much as possible to
@@ -213,8 +201,6 @@ the **Devel** category (see picture below) and pick the latest edition.
 Also, Python3 is required during firmware compilation, so be sure to
 download the latest Python3 from its official website and have it added
 as environment variable when asked during installation.
-
-.. _section-1:
 
 On Linux
 ~~~~~~~~

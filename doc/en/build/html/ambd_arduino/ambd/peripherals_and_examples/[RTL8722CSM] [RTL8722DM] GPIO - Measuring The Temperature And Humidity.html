@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM] [RTL8722DM] GPIO - Use GPIO Interrupt To Control LED" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20GPIO%20-%20Use%20GPIO%20Interrupt%20To%20Control%20LED.html" />
+    <link rel="prev" title="[RTL8722CSM] [RTL8722DM] GPIO – Measure The Distance By Ultrasound Module" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20GPIO%20%E2%80%93%20Measure%20The%20Distance%20By%20Ultrasound%20Module.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM] [RTL8722DM] GPIO - Measuring The Temperature And Humidity</li>
     
     
@@ -173,10 +202,10 @@ which has better precision. Its measurable range of the humidity is
 temperature is -40~125 ℃ with ±0.2℃ precision.</div>
 <div class="line">There are 4 pins on the sensor:</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image127.png"><img alt="1" src="../../../_images/image127.png" style="width: 2.69444in; height: 3.45833in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image139.png"><img alt="1" src="../../../_images/image139.png" style="width: 2.69444in; height: 3.45833in;" /></a>
 <p>Since one of the 4 pins has no function, there are temperature/humidity
 sensors with only 3 pins on the market:</p>
-<a class="reference internal image-reference" href="../../../_images/image226.png"><img alt="2" src="../../../_images/image226.png" style="width: 1.1875in; height: 2.875in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image229.png"><img alt="2" src="../../../_images/image229.png" style="width: 1.1875in; height: 2.875in;" /></a>
 <p>DHT is normally in the sleeping mode. To get the temperature/humidity
 data, please follow the steps:</p>
 <ol class="arabic simple">
@@ -199,15 +228,15 @@ bit 0. Otherwise it stands for bit 1.</p>
 </dl>
 </li>
 </ol>
-<a class="reference internal image-reference" href="../../../_images/image316.png"><img alt="3" src="../../../_images/image316.png" style="width: 6.5in; height: 1.88889in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image319.png"><img alt="3" src="../../../_images/image319.png" style="width: 6.5in; height: 1.88889in;" /></a>
 <div class="line-block">
 <div class="line">RTL8722 wiring diagram:</div>
-<div class="line"><a class="reference internal" href="../../../_images/image414.png"><img alt="4" src="../../../_images/image414.png" style="width: 6.04861in; height: 6.29167in;" /></a></div>
+<div class="line"><a class="reference internal" href="../../../_images/image417.png"><img alt="4" src="../../../_images/image417.png" style="width: 6.04861in; height: 6.29167in;" /></a></div>
 </div>
 <p>Open the sample code in “Files” -&gt; “Examples” -&gt; “AmebaGPIO” -&gt;
 “DHT_Tester”. Compile and upload to Ameba, then press the reset button.
 The result would be shown on the Serial Monitor.</p>
-<a class="reference internal image-reference" href="../../../_images/image56.png"><img alt="5" src="../../../_images/image56.png" style="width: 6.06944in; height: 3.47917in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image59.png"><img alt="5" src="../../../_images/image59.png" style="width: 6.06944in; height: 3.47917in;" /></a>
 <p>Code Reference</p>
 <p>Use dht.readHumidity() read the humidity value, and
 use dht.readTemperature() to read the temperature value.</p>
@@ -222,6 +251,10 @@ Ameba issues a request to DHT to read the latest data.</p>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20GPIO%20-%20Use%20GPIO%20Interrupt%20To%20Control%20LED.html" class="btn btn-neutral float-right" title="[RTL8722CSM] [RTL8722DM] GPIO - Use GPIO Interrupt To Control LED" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20GPIO%20%E2%80%93%20Measure%20The%20Distance%20By%20Ultrasound%20Module.html" class="btn btn-neutral float-left" title="[RTL8722CSM] [RTL8722DM] GPIO – Measure The Distance By Ultrasound Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

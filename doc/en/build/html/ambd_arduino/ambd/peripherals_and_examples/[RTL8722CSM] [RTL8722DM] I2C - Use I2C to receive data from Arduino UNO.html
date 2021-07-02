@@ -37,7 +37,9 @@
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="[RTL8722CSM] [RTL8722DM] I2C - Display Data On LCD Screen" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20I2C%20-%20Display%20Data%20On%20LCD%20Screen.html" />
+    <link rel="prev" title="[RTL8722CSM] [RTL8722DM] I2C - Communicate with Arduino UNO via I2C" href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20I2C%20-%20Communicate%20with%20Arduino%20UNO%20via%20I2C.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,8 +85,27 @@
             
             
               <p class="caption"><span class="caption-text">Open Source SDKs:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../arduino_index.html">Arduino SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">AmebaD</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../ambd_mini/index.html">AmebaD-mini</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/getting_started/RTL8722DM_mini_Arduino%20SDK_getting%20start.html">Getting Started with RTL8722DM_mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/download/index.html">Download</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/index.html">Peripherals &amp; Examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../ambd_mini/peripherals_and_examples/RTL8722DM_MINI_Arduino_SDK_basic_example_table%2015Apr2021.html">Basic Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Network%20Examples.html">Network Examples</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Peripheral%20Examples.html">Peripheral Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Components%20used.html">Components used</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/board_hdk/index.html">Board HDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/api_documents/index.html">API Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/resources/index.html">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ambd_mini/support/index.html">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_micropython/source/index.html">Micropython SDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ambd_sdk/source/index.html">Standard SDK</a></li>
 </ul>
@@ -135,6 +156,14 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../arduino_index.html">Arduino SDK</a> &raquo;</li>
+        
+          <li><a href="../index.html">AmebaD</a> &raquo;</li>
+        
+          <li><a href="index.html">Peripherals &amp; Examples</a> &raquo;</li>
+        
+          <li><a href="Peripheral%20Examples.html">Peripheral Examples</a> &raquo;</li>
+        
       <li>[RTL8722CSM] [RTL8722DM] I2C - Use I2C to receive data from Arduino UNO</li>
     
     
@@ -168,33 +197,25 @@ master, transmits data to the Arduino UNO, the I2C slave. As to this
 example, Ameba is the I2C master, and receives data from the Arduino
 UNO, which is the I2C slave.</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt><a href="#id1"><span class="problematic" id="id2">**</span></a>Setting up Arduino Uno to be I2C Slave</dt><dd><p><a href="#id3"><span class="problematic" id="id4">**</span></a></p>
-</dd>
-</dl>
-</li>
+<li><p><strong>Setting up Arduino Uno to be I2C Slave</strong></p></li>
 </ul>
 <div class="line-block">
 <div class="line">First, select Arduino in the Arduino IDE in “Tools” -&gt; “Board” -&gt;
 “Arduino Uno”:</div>
 <div class="line">Open “Examples” -&gt; “Wire” -&gt; “slave_sender”</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image134.png"><img alt="per-5-1" src="../../../_images/image134.png" style="width: 6.5in; height: 7.16806in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image147.png"><img alt="per-5-1" src="../../../_images/image147.png" style="width: 6.5in; height: 7.16806in;" /></a>
 <p>Then click “Sketch” -&gt; “Upload” to compile and upload the example to
 Arduino Uno.</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt><a href="#id5"><span class="problematic" id="id6">**</span></a>Setting up Ameba to be I2C Master</dt><dd><p><a href="#id7"><span class="problematic" id="id8">**</span></a></p>
-</dd>
-</dl>
-</li>
+<li><p><strong>Setting up Ameba to be I2C Master</strong></p></li>
 </ul>
 <div class="line-block">
 <div class="line">Next, open another window of Arduino IDE, make sure to choose your
 Ameba development board in the IDE: “Tools” -&gt; “Board”</div>
 <div class="line">Open “File” -&gt; “Examples” -&gt; “AmebaWire” -&gt; “MasterReader”</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image233.png"><img alt="per-5-3" src="../../../_images/image233.png" style="width: 6.5in; height: 7.38333in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image235.png"><img alt="per-5-3" src="../../../_images/image235.png" style="width: 6.5in; height: 7.38333in;" /></a>
 <p>Click “Sketch” -&gt; “Upload” to compile and upload the example to Ameba.</p>
 <ul class="simple">
 <li><p><strong>Wiring</strong></p></li>
@@ -205,7 +226,7 @@ Ameba development board in the IDE: “Tools” -&gt; “Board”</div>
 should be connected to each other.</div>
 <div class="line">RTL8722 wiring diagram:</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image320.png"><img alt="per-5-5" src="../../../_images/image320.png" style="width: 6.5in; height: 4.68542in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image323.png"><img alt="per-5-5" src="../../../_images/image323.png" style="width: 6.5in; height: 4.68542in;" /></a>
 <div class="line-block">
 <div class="line">Next, we will observe the data receive by Ameba in the Serial Monitor.</div>
 <div class="line">(Note: If you do not know which port the Ameba development board is
@@ -213,7 +234,7 @@ connected to, please find it in the Device Manager of Windows first.
 Ameba is connected as “mbed Serial Port”. For example, if you find
 mbed Serial Port (COM15) means Ameba is connected to port COM15.)</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image418.png"><img alt="per-5-6" src="../../../_images/image418.png" style="width: 4.52083in; height: 4.21528in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image421.png"><img alt="per-5-6" src="../../../_images/image421.png" style="width: 4.52083in; height: 4.21528in;" /></a>
 <div class="line-block">
 <div class="line">We select the port in “Tools” -&gt; “Port” -&gt; “COM15” (the port connected
 to Ameba)</div>
@@ -227,7 +248,7 @@ printed every half second in serial monitor.</div>
 <div class="line">(NOTE: If the message does not show in the Serial Monitor of Ameba,
 please close and open the serial monitor again.)</div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image59.png"><img alt="per-5-8" src="../../../_images/image59.png" style="width: 5.38194in; height: 6.4375in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image512.png"><img alt="per-5-8" src="../../../_images/image512.png" style="width: 5.38194in; height: 6.4375in;" /></a>
 <p>Code Reference</p>
 <div class="line-block">
 <div class="line">You can find detailed information of this example in the documentation
@@ -251,6 +272,10 @@ to request data.</div>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20I2C%20-%20Display%20Data%20On%20LCD%20Screen.html" class="btn btn-neutral float-right" title="[RTL8722CSM] [RTL8722DM] I2C - Display Data On LCD Screen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%5BRTL8722CSM%5D%20%5BRTL8722DM%5D%20I2C%20-%20Communicate%20with%20Arduino%20UNO%20via%20I2C.html" class="btn btn-neutral float-left" title="[RTL8722CSM] [RTL8722DM] I2C - Communicate with Arduino UNO via I2C" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
