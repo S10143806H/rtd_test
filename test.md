@@ -2,7 +2,7 @@ Table of Content
 ================
 
 - [Code Acceptance](#code-acceptance)
-- [Upload Instructions](#upload-instructions)
+- [Coding Style](#coding-style)
   - [Step 1: Fork this repository](#fork-this-repository)
   - [Step 2: In the repository of your fork, enter the accomdemt/slide file path to upload files](upload briefing files)
   - [Step 3: Upload a previewable PDF file](Upload a previewable PDF file)
@@ -11,14 +11,15 @@ Table of Content
 - [Information reference](#Information reference)
 
 
-The Ameba Arduino/SDK/MicroPython codebase are hosted on GitHub, you can submit new features or bug fixes using ``Pull Request`` on Github. Before you do so, please read the **Coding Style** and **Contribution Guideline** section.
+The Ameba Arduino/SDK/MicroPython codebase are hosted on GitHub, you can submit new features or bug fixes using ``Pull Request`` on Github. Before you do so, please read the [**Coding Style**](#coding-style) and **Contribution Guideline** section.
 
 Code Acceptance
 ===============
 
 Once submit your ``Pull Request``, our developers will take a look and comment on the ``Pull Request``. If all is well and acceptable, your code will be ready for merging into the central development branch.
 
-### Coding Style
+Coding Style
+=============
 
 Ameba Coding Style mostly adopt from Mbed OS. Whether you're writing new code or fixing bugs in existing code, please follow the Ameba coding style.
 
