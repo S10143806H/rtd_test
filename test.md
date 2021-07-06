@@ -10,8 +10,10 @@ Table of Content
   - [Step 5: Submit Pull Request](Submit PR)
 - [Information reference](#Information reference)
 
-
+---
+**NOTE**
 The Ameba Arduino/SDK/MicroPython codebase are hosted on GitHub, you can submit new features or bug fixes using ``Pull Request`` on Github. Before you do so, please read the [**Coding Style**](#coding-style) and **Contribution Guideline** section.
+---
 
 Code Acceptance
 ===============
