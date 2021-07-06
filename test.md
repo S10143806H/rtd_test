@@ -1,8 +1,13 @@
 Table of Content
 ================
 
-- [Code Acceptance](#code-acceptance)
-- [Coding Style](#coding-style)
+- [**Code Acceptance**](#code-acceptance)
+- [**Coding Style**](#coding-style)
+  - [Naming Conventions](#naming-conventions) 
+    - [Classes](#classes)
+    - [Functions](#functions)
+- [**Contribution Guideline**](#contribution-guideline)
+- [**Reporting Bugs**](#reporting-bugs)
   - [Step 1: Fork this repository](#fork-this-repository)
   - [Step 2: In the repository of your fork, enter the accomdemt/slide file path to upload files](upload briefing files)
   - [Step 3: Upload a previewable PDF file](Upload a previewable PDF file)
@@ -10,10 +15,15 @@ Table of Content
   - [Step 5: Submit Pull Request](Submit PR)
 - [Information reference](#Information reference)
 
----
-**NOTE**
-The Ameba Arduino/SDK/MicroPython codebase are hosted on GitHub, you can submit new features or bug fixes using ``Pull Request`` on Github. Before you do so, please read the [**Coding Style**](#coding-style) and **Contribution Guideline** section.
----
+
+<br>
+
+----
+
+> :warning: The Ameba Arduino / SDK / MicroPython codebase are hosted on GitHub, you can submit new features or bug fixes using ``Pull Request`` on Github. 
+> 
+> Before you do so, please read the [**Coding Style**](#coding-style) and [**Contribution Guideline**](#contribution-guideline) section.
+
 
 Code Acceptance
 ===============
@@ -37,7 +47,8 @@ Ameba follows the [K&R style -- Variant: 1TBS](https://en.wikipedia.org/wiki/Ind
 * Use capital letters for macros.
 * Preprocessor macro starts at the beginning of a new line; the code inside is indented according to the code above it.
 
-### Naming Conventions
+Naming Conventions
+------------------
 
 #### Classes
 
@@ -59,7 +70,8 @@ Ameba follows the [K&R style -- Variant: 1TBS](https://en.wikipedia.org/wiki/Ind
 <br>
 <br>
 
-### Contribution Guideline
+Contribution Guideline
+======================
 
 Before contributing an enhancement (for example, a new feature or new port), please [discuss it on the forums](https://forum.amebaiot.com/) or on the [Facebook group](https://www.facebook.com/groups/AmebaIoT) to avoid duplication of work, as we or others might be working on a related feature.
 
@@ -67,7 +79,8 @@ We can only accept contributions through GitHub if you create a ``Pull Request``
 
 Please create separate ``Pull Requests`` for each topic; each ``Pull Request`` needs a clear unity of purpose. In particular, separate code formatting and style changes from functional changes. This makes each ``Pull Request``’s true contribution clearer, so review is quicker and easier.
 
-### Reporting Bugs
+Reporting Bugs
+================
 
 You can submit Ameba bugs directly on [GitHub](https://github.com/ambiot). Please submit questions or enhancement requests on the [ forums](https://forum.amebaiot.com/) or on the [Facebook group](https://www.facebook.com/groups/AmebaIoT)
 
