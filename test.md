@@ -8,7 +8,7 @@ Table of Content
     - [Functions](#functions)
 - [**Contribution Guideline**](#contribution-guideline)
 - [**Reporting Bugs**](#reporting-bugs)
-  - [Step 1: Fork this repository](#fork-this-repository)
+  - [GitHub Pull Requests](#github-pull-requests)
   - [Step 2: In the repository of your fork, enter the accomdemt/slide file path to upload files](upload briefing files)
   - [Step 3: Upload a previewable PDF file](Upload a previewable PDF file)
   - [Step 4: Commit uploading files](Commit uploading files)
@@ -86,7 +86,8 @@ You can submit Ameba bugs directly on [GitHub](https://github.com/ambiot). Pleas
 
 The bug report should be reproducible (fails for others) and specific (where and how it fails). We will close insufficient bug reports.
 
-### GitHub Pull Requests
+GitHub Pull Requests
+---------------------
 
 Pull requests on GitHub have to meet the following requirements to keep the code and commit history clean:
 
