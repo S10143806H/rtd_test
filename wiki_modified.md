@@ -22,6 +22,12 @@ Table of Content
 <br>
 
 
+Test of GIF
+============
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
+
 Code Acceptance
 ===============
 
