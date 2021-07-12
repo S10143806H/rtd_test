@@ -20,11 +20,11 @@ Table of Content
 > Before you do so, please read the [**Coding Style**](#coding-style) and [**Contribution Guideline**](#contribution-guideline) section.
 
 <br>
-
-
+<!-- 
 Test of GIF
 ============
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif) 
+-->
 
 
 
